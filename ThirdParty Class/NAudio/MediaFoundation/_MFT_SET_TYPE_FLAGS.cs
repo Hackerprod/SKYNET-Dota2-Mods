@@ -1,0 +1,11 @@
+using System;
+
+namespace NAudio.MediaFoundation
+{
+	[Flags]
+	public enum _MFT_SET_TYPE_FLAGS
+	{
+		None = 0x0,
+		MFT_SET_TYPE_TEST_ONLY = 0x1
+	}
+}
