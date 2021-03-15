@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F4FDCC4-222C-4EEB-ABD1-31C0C105C599}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SkynetDota2Mods</RootNamespace>
+    <AssemblyName>[SKYNET] Dota2 Mods</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Frondillo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\[SKYNET] Dota2 Mods\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|x64'">
+    <OutputPath>bin\x64\x86\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'x86|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\x86\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NAudio">
+      <HintPath>..\..\..\..\..\Juegos\Herramientas\Dota 2\Valve Resource Viewer\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="NLayer">
+      <HintPath>..\..\..\..\..\Juegos\Herramientas\Dota 2\Valve Resource Viewer\NLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="NLayer.NAudioSupport">
+      <HintPath>..\..\..\..\..\Juegos\Herramientas\Dota 2\Valve Resource Viewer\NLayer.NAudioSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\..\..\..\..\Juegos\Herramientas\Dota 2\Valve Resource Viewer\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Desktop">
+      <HintPath>..\..\..\..\..\Juegos\Herramientas\Dota 2\Valve Resource Viewer\SkiaSharp.Views.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ValvePak">
+      <HintPath>..\..\..\..\..\Juegos\Herramientas\Dota 2\Valve Resource Viewer\ValvePak.dll</HintPath>
+    </Reference>
+    <Reference Include="ValveResourceFormat">
+      <HintPath>..\..\..\..\..\Juegos\Herramientas\Dota 2\Valve Resource Viewer\ValveResourceFormat.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Keyboard\Keyboard.cs" />
+    <Compile Include="Class\Keyboard\KeyboardHelper.cs" />
+    <Compile Include="Class\Keyboard\KeyboardHook.cs" />
+    <Compile Include="Class\Keyboard\Res.cs" />
+    <Compile Include="Class\Settings.cs" />
+    <Compile Include="Class\Windows\Errors.cs" />
+    <Compile Include="Class\Windows\Kernel32.cs" />
+    <Compile Include="Class\Windows\User32.cs" />
+    <Compile Include="Controls\FlatContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frm\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniClass.cs" />
+    <Compile Include="ThirdParty Class\Media\Sound.cs" />
+    <Compile Include="Controls\BoxInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FlatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlatCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlatTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlatTextBox2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Metro\IMetroControl.cs" />
+    <Compile Include="Controls\Metro\ListViewColumnSorter.cs" />
+    <Compile Include="Controls\Metro\SkynListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Metro\MetroPaintEventArgs.cs" />
+    <Compile Include="Controls\Metro\MetroPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Metro\MetroScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Metro\MetroTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Metro\SkyProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Metro\WinApi.cs" />
+    <Compile Include="Controls\SkynListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frm\frmExportLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmExportLS.designer.cs">
+      <DependentUpon>frmExportLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\FileManager.cs" />
+    <Compile Include="frm\frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmMessage.designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmTools.designer.cs">
+      <DependentUpon>frmTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkClass\modHelpers.cs" />
+    <Compile Include="WorkClass\AudioPlayer.cs" />
+    <Compile Include="WorkClass\Hero.cs" />
+    <Compile Include="Class\ILog.cs" />
+    <Compile Include="WorkClass\modManager.cs" />
+    <Compile Include="ThirdParty Class\Valve\ValvePak\ArchiveMD5SectionEntry.cs" />
+    <Compile Include="ThirdParty Class\Valve\ValvePak\AsnKeyParser.cs" />
+    <Compile Include="ThirdParty Class\Valve\ValvePak\AsnParser.cs" />
+    <Compile Include="ThirdParty Class\Valve\ValvePak\BerDecodeException.cs" />
+    <Compile Include="ThirdParty Class\Valve\ValvePak\Crc32.cs" />
+    <Compile Include="ThirdParty Class\Valve\ValvePak\Package.cs" />
+    <Compile Include="ThirdParty Class\Valve\ValvePak\PackageEntry.cs" />
+    <Compile Include="WorkClass\Colors.cs" />
+    <Compile Include="Controls\BundleBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BoxItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorSystem.cs" />
+    <Compile Include="Controls\FlatTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkClass\ItemsManager.cs" />
+    <Compile Include="Controls\MouseState.cs" />
+    <Compile Include="frm\frmItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmItems.designer.cs">
+      <DependentUpon>frmItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkClass\ItemDescription.cs" />
+    <Compile Include="WorkClass\LoadingScreen.cs" />
+    <Compile Include="WorkClass\prefabs.cs" />
+    <Compile Include="WorkClass\Heroes.cs" />
+    <Compile Include="WorkClass\Items.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Helpers.cs" />
+    <Compile Include="Helpers\Bitstream.cs" />
+    <Compile Include="Helpers\DateHelpers.cs" />
+    <Compile Include="Helpers\NetHelpers.cs" />
+    <Compile Include="Helpers\ResourceHelper.cs" />
+    <Compile Include="Helpers\StreamHelpers.cs" />
+    <Compile Include="Helpers\Vector.cs" />
+    <Compile Include="ThirdParty Class\KValue\KValue.cs" />
+    <Compile Include="ThirdParty Class\KValue\KValueHelpers.cs" />
+    <Compile Include="ThirdParty Class\KValue\KValueTextReader.cs" />
+    <Compile Include="ThirdParty Class\KValue\KValueType.cs" />
+    <Compile Include="ThirdParty Class\Media\HeroComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThirdParty Class\Media\Media.cs" />
+    <Compile Include="ThirdParty Class\Media\PositionEventHandler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Class\DotaResources.cs" />
+    <Compile Include="Class\StoreManagement.cs" />
+    <Compile Include="ThirdParty Class\VPKExtract\VPKManager.cs" />
+    <Compile Include="ThirdParty Class\VPKExtract\VpkFile.cs" />
+    <Compile Include="ThirdParty Class\VPKExtract\VpkNode.cs" />
+    <Compile Include="ThirdParty Class\VPKExtract\VPKUtils.cs" />
+    <Compile Include="WorkClass\Style.cs" />
+    <Compile Include="WorkClass\Wallpaper.cs" />
+    <EmbeddedResource Include="Controls\BoxInfo.resx">
+      <DependentUpon>BoxInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BundleBox.resx">
+      <DependentUpon>BundleBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ItemControl.resx">
+      <DependentUpon>ItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BoxItems.resx">
+      <DependentUpon>BoxItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmExportLS.resx">
+      <DependentUpon>frmExportLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmMessage.resx">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmTools.resx">
+      <DependentUpon>frmTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmItems.resx">
+      <DependentUpon>frmItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThirdParty Class\Media\HeroComboBox.resx">
+      <DependentUpon>HeroComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Class\ExtractEconItemsCommand.cs" />
+    <Compile Include="Class\ExtractRichPresenceCommand.cs" />
+    <Compile Include="Class\modCommon.cs" />
+    <Compile Include="Class\Paths.cs" />
+    <Compile Include="ThirdParty Class\RecyclableMemoryStream\RecyclableMemoryStream.cs" />
+    <Compile Include="ThirdParty Class\RecyclableMemoryStream\RecyclableMemoryStreamManager.cs" />
+    <Compile Include="ThirdParty Class\RecyclableMemoryStream\RecyclableStreams.cs" />
+    <Compile Include="ThirdParty Class\RecyclableMemoryStream\StreamHelpers.cs" />
+    <Compile Include="Class\RegenItemMatrixCommand.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_home_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topbar_heroes_small_4x3_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_skywrath_mage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_slardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_slark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_sniper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_spectre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_spirit_breaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_storm_spirit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_sven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_techies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_templar_assassin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_terrorblade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_tidehunter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_tinker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_treant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_troll_warlord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_tusk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_undying.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_ursa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_vengefulspirit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_venomancer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_viper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_visage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_warlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_weaver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_windrunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_wisp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_witch_doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_zuus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_abaddon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_alchemist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_ancient_apparition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_antimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_axe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_bane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_batrider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_beastmaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_bloodseeker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_bounty_hunter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_brewmaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_bristleback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_broodmother.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_centaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_chaos_knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_chen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_clinkz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_crystal_maiden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_dark_seer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_dazzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_death_prophet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_disruptor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_doom_bringer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_dragon_knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_drow_ranger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_earth_spirit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_earthshaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_elder_titan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_ember_spirit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_enchantress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_enigma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_faceless_void.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_furion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_gyrocopter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_huskar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_invoker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_jakiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_juggernaut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_keeper_of_the_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_kunkka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_legion_commander.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_leshrac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_lich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_life_stealer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_lina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_lion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_lone_druid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_luna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_lycan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_magnataur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_medusa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_meepo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_mirana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_morphling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_naga_siren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_necrolyte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_nevermore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_night_stalker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_nyx_assassin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_obsidian_destroyer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_ogre_magi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_omniknight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_phantom_assassin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_phantom_lancer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_phoenix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_puck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_pudge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_pugna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_queenofpain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_rattletrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_razor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_riki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_rubick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_sand_king.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_shadow_demon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_shadow_shaman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_shredder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_silencer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_skeleton_king.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_mars_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_snapfire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_void_spirit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_winter_wyvern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_abyssal_underlord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_arc_warden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_dark_willow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_grimstroke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_invoker_persona1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_mars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_monkey_king.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_oracle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\npc_dota_hero_pangolier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dota_logo_and_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testitem_slot_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frondillo.png" />
+    <None Include="Resources\M3.png" />
+    <None Include="Resources\M2.png" />
+    <None Include="Resources\M1.png" />
+    <None Include="Resources\SelectedMenu.png" />
+    <None Include="Resources\cursor.ico" />
+    <None Include="Resources\cursor.png" />
+    <None Include="Resources\Rigth2.png" />
+    <None Include="Resources\Rigth1.png" />
+    <None Include="Resources\Left2.png" />
+    <None Include="Resources\Left1.png" />
+    <None Include="Resources\default_no_item.png" />
+    <None Include="Resources\default_item.png" />
+    <None Include="Resources\SClose2.png" />
+    <None Include="Resources\SClose1.png" />
+    <None Include="Resources\Close1.png" />
+    <None Include="Resources\Settings2.png" />
+    <None Include="Resources\Settings1.png" />
+    <None Include="Resources\Sin título-2.jpg" />
+    <None Include="Resources\default_taunt.png" />
+    <Content Include="Frondillo.ico" />
+    <Content Include="Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
