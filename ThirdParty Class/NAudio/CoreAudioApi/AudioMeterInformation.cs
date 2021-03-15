@@ -1,0 +1,35 @@
+using NAudio.CoreAudioApi.Interfaces;
+using System.Runtime.InteropServices;
+
+namespace NAudio.CoreAudioApi
+{
+	public class AudioMeterInformation
+	{
+		private readonly IAudioMeterInformation audioMeterInformation;
+
+		private readonly EEndpointHardwareSupport hardwareSupport;
+
+		private readonly AudioMeterInformationChannels channels;
+
+		public AudioMeterInformationChannels PeakValues => channels;
+
+		public EEndpointHardwareSupport HardwareSupport => hardwareSupport;
+
+		public float MasterPeakValue
+		{
+			get
+			{
+				Marshal.ThrowExceptionForHR(audioMeterInformation.GetPeakValue(out float pfPeak));
+				return pfPeak;
+			}
+		}
+
+		internal AudioMeterInformation(IAudioMeterInformation realInterface)
+		{
+			audioMeterInformation = realInterface;
+			Marshal.ThrowExceptionForHR(audioMeterInformation.QueryHardwareSupport(out int pdwHardwareSupportMask));
+			hardwareSupport = (EEndpointHardwareSupport)pdwHardwareSupportMask;
+			channels = new AudioMeterInformationChannels(audioMeterInformation);
+		}
+	}
+}
