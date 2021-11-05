@@ -1,0 +1,5 @@
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET.Common\obj\Debug\net5.0\SKYNET.Common.csproj.AssemblyReference.cache
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET.Common\obj\Debug\net5.0\SKYNET.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET.Common\obj\Debug\net5.0\SKYNET.Common.AssemblyInfoInputs.cache
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET.Common\obj\Debug\net5.0\SKYNET.Common.AssemblyInfo.cs
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET.Common\obj\Debug\net5.0\SKYNET.Common.csproj.CoreCompileInputs.cache

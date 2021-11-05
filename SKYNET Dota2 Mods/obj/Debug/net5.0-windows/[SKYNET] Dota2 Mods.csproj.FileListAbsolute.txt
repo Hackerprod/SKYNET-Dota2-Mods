@@ -5,7 +5,6 @@ C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debu
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\[SKYNET] Dota2 Mods.dll
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\ref\[SKYNET] Dota2 Mods.dll
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\[SKYNET] Dota2 Mods.pdb
-C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\ValvePak.dll
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\[SKYNET] Dota2 Mods.csproj.AssemblyReference.cache
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET_Dota2_Mods.Form1.resources
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\[SKYNET] Dota2 Mods.csproj.GenerateResource.cache
@@ -17,3 +16,19 @@ C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debu
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\ref\[SKYNET] Dota2 Mods.dll
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\[SKYNET] Dota2 Mods.pdb
 C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\[SKYNET] Dota2 Mods.genruntimeconfig.cache
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SharpGLTF.Core.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SharpGLTF.Toolkit.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SkiaSharp.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\ValveKeyValue.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\ValveResourceFormat.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\ZstdSharp.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\[SKYNET] Dota2 Mods.csproj.CopyComplete
