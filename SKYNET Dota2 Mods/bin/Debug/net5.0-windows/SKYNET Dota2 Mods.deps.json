@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SKYNET Dota2 Mods/1.0.0": {
+        "runtime": {
+          "SKYNET Dota2 Mods.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SKYNET Dota2 Mods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

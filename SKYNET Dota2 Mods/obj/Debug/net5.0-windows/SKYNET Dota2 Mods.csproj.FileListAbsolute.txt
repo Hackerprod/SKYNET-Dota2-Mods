@@ -1,0 +1,18 @@
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SKYNET Dota2 Mods.exe
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SKYNET Dota2 Mods.deps.json
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SKYNET Dota2 Mods.runtimeconfig.json
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SKYNET Dota2 Mods.runtimeconfig.dev.json
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SKYNET Dota2 Mods.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\ref\SKYNET Dota2 Mods.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\bin\Debug\net5.0-windows\SKYNET Dota2 Mods.pdb
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.csproj.AssemblyReference.cache
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET_Dota2_Mods.Form1.resources
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.csproj.GenerateResource.cache
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.AssemblyInfoInputs.cache
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.AssemblyInfo.cs
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\ref\SKYNET Dota2 Mods.dll
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.pdb
+C:\Users\Administrador\source\repos\SKYNET Dota2 Mods\SKYNET Dota2 Mods\obj\Debug\net5.0-windows\SKYNET Dota2 Mods.genruntimeconfig.cache
